@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  frontend:
+    build: 
+      context: ../../
+      dockerfile: ./ops/local/Dockerfile.dev
+    command: yarn run dev
+    container_name: frontend
+    ports:
+      - "8080:8080"        
+    volumes: 
+      - ../../:/frontend
+      - /frontend/node_modules
