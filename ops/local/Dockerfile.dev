@@ -17,4 +17,4 @@ WORKDIR /frontend
 # CMD [ "yarn", "run", "start" ]
 
 ENTRYPOINT yarn && yarn start
-EXPOSE 8001
+EXPOSE 8080
