@@ -17,7 +17,7 @@ https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a4
 https://learn2torials.com/a/dockerize-reactjs-app  
 
 ### Webpack building and livereload in Docker container  
-https://www.youtube.com/watch?v=3xDAU5cvi5E  
+[https://www.youtube.com/watch?v=3xDAU5cvi5E](https://www.youtube.com/watch?v=EP85Lrwktpw)  
 
 # Tech stack:  
 Reactjs  
