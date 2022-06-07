@@ -3,7 +3,7 @@ yarn
 yarn run dev  
   
 # docker local  
-docker-compose -f ops/local/docker-compose-local.yml up -d  
+docker-compose -f ops/local/docker-compose-local.yml up -d -v $$(pwd)/frontend:/app frontend/app  
 docker-compose -f ops/local/docker-compose-local.yml build
   
 # docker production  
