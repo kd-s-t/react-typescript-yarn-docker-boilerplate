@@ -6,16 +6,12 @@ WORKDIR /frontend
 
 # copy the json file first
 COPY ../../package.json /frontend
-COPY ../../nodemon.json /frontend
 
 # install yarn dependencies
 RUN yarn
 
 # copy other project files
 COPY . .
-
-# build the folder
-# CMD [ "yarn", "run", "start" ]
 
 CMD yarn config set cache-min 9999999 \
     && yarn install \

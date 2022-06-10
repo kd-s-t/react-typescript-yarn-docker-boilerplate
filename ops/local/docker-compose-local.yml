@@ -8,7 +8,6 @@ services:
     ports:
       - "8080:8080"        
     volumes: 
-      - ../../tmp/npm:/root/.npm:z
       - ../../:/frontend:z
       - /frontend/node_modules
     environment:
