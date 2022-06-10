@@ -19,6 +19,7 @@ https://learn2torials.com/a/dockerize-reactjs-app
 ### Webpack building and livereload in Docker container  
 https://www.youtube.com/watch?v=3xDAU5cvi5E (obsolete)  
 https://blog.logrocket.com/complete-guide-full-stack-live-reload/  
+[https://www.youtube.com/watch?v=3xDAU5cvi5E](https://www.youtube.com/watch?v=EP85Lrwktpw)  
 
 # Tech stack:  
 Reactjs  
