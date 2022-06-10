@@ -3,8 +3,8 @@ yarn
 yarn run dev  
   
 # docker local  
-docker-compose -f ops/local/docker-compose-local.yml up -d -v $$(pwd)/frontend:/app frontend/app  
-docker-compose -f ops/local/docker-compose-local.yml build
+docker-compose -f ops/local/docker-compose-local.yml build   
+docker-compose -f ops/local/docker-compose-local.yml up   
   
 # docker production  
 docker-compose ops/prod/docker-compose.yml up -d  
@@ -17,7 +17,8 @@ https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a4
 https://learn2torials.com/a/dockerize-reactjs-app  
 
 ### Webpack building and livereload in Docker container  
-https://www.youtube.com/watch?v=3xDAU5cvi5E  
+https://www.youtube.com/watch?v=3xDAU5cvi5E (obsolete)  
+https://blog.logrocket.com/complete-guide-full-stack-live-reload/  
 
 # Tech stack:  
 Reactjs  

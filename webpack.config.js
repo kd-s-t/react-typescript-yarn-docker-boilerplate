@@ -33,9 +33,10 @@ module.exports = {
       },
     ]
   },
+  devtool: "source-map",
   devServer: {
-    port: 8080,
-    host: '0.0.0.0'
+    static: './dist',
+    hot: false,
   },
   plugins: [
     new HtmlWebpackPlugin({

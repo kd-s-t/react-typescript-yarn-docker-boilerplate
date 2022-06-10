@@ -5,16 +5,18 @@ FROM node:alpine as builder
 WORKDIR /frontend
 
 # copy the json file first
-# COPY ../../package.json /frontend
+COPY ../../package.json /frontend
+COPY ../../nodemon.json /frontend
 
 # install yarn dependencies
-# RUN yarn
+RUN yarn
 
 # copy other project files
-# COPY . .
+COPY . .
 
 # build the folder
 # CMD [ "yarn", "run", "start" ]
 
-ENTRYPOINT yarn && yarn start
-EXPOSE 8080
+CMD yarn config set cache-min 9999999 \
+    && yarn install \
+    && yarn start
