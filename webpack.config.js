@@ -35,7 +35,6 @@ module.exports = {
       },
     ]
   },
-  watch: true,
   watchOptions: {
     aggregateTimeout: 200,
     poll: 1000,
@@ -53,9 +52,15 @@ module.exports = {
     liveReload: true,
     historyApiFallback: true
   },
+  resolve: {
+    alias: {
+      client: path.resolve(__dirname, 'src/') // added this
+    },
+    extensions: ['.tsx', '.js', '.jsx', '.ts', '.json']
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'react v3',
+      title: 'Cebu Pacific Air React Boilerplater 6.2022',
       template: path.join(__dirname, "src", "index.html"),
     }),
   ],
